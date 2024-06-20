@@ -16,7 +16,7 @@
 
     <div class="flex items-center justify-center ">
       <div class="hidden  lg:block space-x-6"> 
-        <a href="#" class=" rounded group relative inline-block overflow-hidden border border-yellow px-8 py-3 focus:outline-none focus:ring">
+        <a href="#" class=" rounded group relative inline-block overflow-hidden border border-yellow px-8 py-2 focus:outline-none focus:ring">
           <span
             class="absolute inset-y-0 left-0 w-[0px] bg-yellow transition-all group-hover:w-full group-active:bg-yellow"></span>
           <span
@@ -24,7 +24,7 @@
             <FileSpreadsheet :size="20" /> Boleto
           </span>
         </a>
-        <a href="#" class=" rounded group relative inline-block overflow-hidden border border-yellow px-8 py-3 focus:outline-none focus:ring">
+        <a href="#" class=" rounded group relative inline-block overflow-hidden border border-yellow px-8 py-2 focus:outline-none focus:ring">
           <span
             class="absolute inset-y-0 left-0 w-[0px] bg-yellow transition-all group-hover:w-full group-active:bg-yellow"></span>
           <span

@@ -14,14 +14,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-     /*  fontFamily: {
-       'mulish': ['Mulish', 'sans-serif'],
-       sans: ["Mulish", ...defaultTheme.fontFamily.sans]
-      }, */
+      fontFamily: {
+       'poppins': ['Poppins', 'sans-serif'],
+       sans: ["Poppins", ...defaultTheme.fontFamily.sans]
+      },
       colors: {
         'teal': {
           DEFAULT: '#006b7f',
-          '100': '#009eb5', /* 0096b1 */
+          '100': '#009eb5', 
 
       },
       'yellow': {
