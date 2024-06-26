@@ -1,6 +1,6 @@
 <template>
   <NuxtLink @click="scrollToSection('home')">
-      <img class="w-auto md:h-auto h-14 cursor-pointer" src="assets/icons/ServenC.svg" alt="logo">
+      <img class="w-auto md:h-auto h-14 cursor-pointer" src="assets/images/logo-branco.png" alt="logo">
   </NuxtLink>
 </template>
 
