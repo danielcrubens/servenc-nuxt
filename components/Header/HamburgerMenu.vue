@@ -19,13 +19,13 @@
     
         <ul class="flex flex-col items-center justify-start bg-teal h-full mx-auto gap-6 py-9">
         <li>
-          <a class="link" href="#">Serviços</a>
+          <NuxtLink @click="scrollToSection('services')" class="link">Serviços</NuxtLink>
         </li>
         <li>
-          <a class="link" href="#">Diferenciais</a>
+          <NuxtLink @click="scrollToSection('solutions')" class="link">Diferenciais</NuxtLink>
         </li>
         <li>
-          <a class="link" href="#">ServenC Prime</a>
+          <NuxtLink @click="scrollToSection('prime')" class="link" >ServenC Prime</NuxtLink>
         </li>
         <a class=" rounded group relative inline-block overflow-hidden border border-yellow px-8 py-3 focus:outline-none focus:ring"
             href="#">
@@ -91,7 +91,9 @@ import { FileSpreadsheet, LogIn } from 'lucide-vue-next';
 const isToggled = ref(false);
 
 const toggle = () => {
-  console.log(isToggled.value);
   isToggled.value = !isToggled.value;
 };
+
+import scrollMixin from '../mixins/scrollMixin'; 
+const { scrollToSection } = scrollMixin.methods;
 </script>

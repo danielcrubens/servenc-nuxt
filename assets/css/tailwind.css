@@ -9,7 +9,6 @@
   outline: none;
   list-style: none;
   text-decoration: none;
- /*  font-family: "Inter", sans-serif; */
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -27,4 +26,15 @@
 }
 *:focus {
   outline: none;
+}
+html{
+  overflow-x: hidden;
+}
+::selection {
+  color: #ffffff;
+  background: #006b7f;
+}
+::-moz-selection {
+  color: #ffffff;
+  background: #006b7f;
 }

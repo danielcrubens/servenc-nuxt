@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
 
   devtools: { enabled:false },
   app: {
@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     }
     },
 
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxt/image","@hypernym/nuxt-gsap","nuxt3-lenis"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxt/image","@hypernym/nuxt-gsap","nuxt-aos"],
 
   css: [
     'normalize.css/normalize.css',
@@ -31,13 +31,22 @@ export default defineNuxtConfig({
       Poppins: [400, 500, 600, 700],
     },
   },
-  gsap: {
-    /* composables: true, */
+/*   gsap: {
+    composables: true,
     extraPlugins: {
       scrollTrigger: true,
       scrollTo: true,
-
     }
-  },
+  }, */
   components: true,
+  build: {
+    transpile: ["gsap"]
+  },
+  aos: {
+    easing: 'ease',
+    offset: 120,
+    once: true,
+    mirror: true,
+    startEvent: 'DOMContentLoaded', 
+  },
 })

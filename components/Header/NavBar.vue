@@ -3,20 +3,20 @@
     <nav aria-label="Global" class="hidden  lg:block ">
       <ul class="flex items-center gap-6 ">
         <li>
-          <a class="link" href="#">Serviços</a>
+          <NuxtLink @click="scrollToSection('services')" class="link">Serviços</NuxtLink>
         </li>
         <li>
-          <a class="link" href="#">Diferenciais</a>
+          <NuxtLink @click="scrollToSection('solutions')" class="link">Diferenciais</NuxtLink>
         </li>
         <li>
-          <a class="link" href="#">ServenC Prime</a>
+          <NuxtLink @click="scrollToSection('prime')" class="link" >ServenC Prime</NuxtLink>
         </li>
       </ul>
     </nav>
 
     <div class="flex items-center justify-center ">
       <div class="hidden  lg:block space-x-6"> 
-        <a href="#" class=" rounded group relative inline-block overflow-hidden border border-yellow px-8 py-2 focus:outline-none focus:ring">
+        <a href="https://www.brcondominio.com.br/br1/app/index.html" target="_blank" class=" rounded group relative inline-block overflow-hidden border border-yellow px-8 py-2 focus:outline-none ">
           <span
             class="absolute inset-y-0 left-0 w-[0px] bg-yellow transition-all group-hover:w-full group-active:bg-yellow"></span>
           <span
@@ -24,7 +24,7 @@
             <FileSpreadsheet :size="20" /> Boleto
           </span>
         </a>
-        <a href="#" class=" rounded group relative inline-block overflow-hidden border border-yellow px-8 py-2 focus:outline-none focus:ring">
+        <a href="https://servenceconomia.polgo.com.br/" target="_blank" class=" rounded group relative inline-block overflow-hidden border border-yellow px-8 py-2 focus:outline-none ">
           <span
             class="absolute inset-y-0 left-0 w-[0px] bg-yellow transition-all group-hover:w-full group-active:bg-yellow"></span>
           <span
@@ -43,11 +43,13 @@
 
 <style lang="css" scoped>
 .link {
-  @apply text-white text-base font-semibold transition hover:text-white/75;
+  @apply text-white text-base font-semibold transition hover:text-white/75 cursor-pointer;
 }
 </style>
 
 <script setup>
 import { FileSpreadsheet, LogIn } from 'lucide-vue-next';
 import HamburgerMenu from '../Header/HamburgerMenu.vue'
+import scrollMixin from '../mixins/scrollMixin'; 
+const { scrollToSection } = scrollMixin.methods;
 </script>

@@ -1,14 +1,14 @@
 <template>
-  <section class="bg-teal">
-    <div class="mx-auto px-9 py-6 lg:px-14 lg:py-16">
-      <h2 class="text-2xl lg:text-4xl font-bold text-white text-center">
+  <section id="services" class="bg-teal md:py-8">
+    <div class="mx-auto px-9 py-6 lg:px-16 lg:py-16">
+      <h2 class="text-2xl lg:text-4xl font-bold text-white text-center"data-aos-delay="300" data-aos-offset="350" data-aos="fade-up" data-aos-duration="1400">
         Nossos Serviços
       </h2>
-      <h3 class="text-xl lg:text-3xl font-semibold text-white text-center">
+      <h3 class="text-xl lg:text-3xl font-semibold text-white text-center"data-aos-delay="350" data-aos-offset="350" data-aos="fade-up" data-aos-duration="1400">
         Tudo que você precisa em uma administradora
       </h3>
       <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-24 lg:mt-14 mt-8">
-        <div class=" lg:grid py-4">
+        <div class=" lg:grid py-4"data-aos-delay="360" data-aos-offset="350" data-aos="fade-right" data-aos-duration="1400">
           <div class="lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-5 grid grid-cols-3 gap-3">
             <div class="btn-service group"  @click="showContent('empresarial')">
               <span class="absolute px-12 py-3 rounded inset-0 border border-yellow group-active:border-yellow"></span>
@@ -37,7 +37,7 @@
           </div>
         </div>
 
-        <div class="rounded  border border-yellow lg:col-span-2 lg:p-6 p-6">
+        <div class="rounded  border border-yellow lg:col-span-2 lg:p-6 p-6"data-aos-delay="360" data-aos-offset="350" data-aos="fade-left" data-aos-duration="1400">
           <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-1 lg:items-center lg:gap-x-16">
             <div v-if="selectedContent === 'empresarial'" class="grid-card">
               <div class="card">

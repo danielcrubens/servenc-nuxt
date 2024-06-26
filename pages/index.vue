@@ -3,7 +3,6 @@
   <Home/>
   <About/>
   <Solutions/>
-  <SmoothScroller/>
   <Service/>
   <Prime/>
 </template>

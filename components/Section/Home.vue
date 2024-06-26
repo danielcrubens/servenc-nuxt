@@ -1,8 +1,8 @@
 <template>
-  <section class="before:content-[''] bg-[url('@/assets/images/line2.png')] bg-auto bg-no-repeat lg:bg-[left_-2rem_bottom_-2rem] bg-[left_-6rem_bottom_-2rem]">
-    <div class="mx-auto mt-20 pt-16 px-14">
+  <section id="home" class="before:content-[''] bg-[url('@/assets/images/line2.png')] bg-auto bg-no-repeat lg:bg-[left_-2rem_bottom_-2rem] bg-[left_-6rem_bottom_-2rem]">
+    <div class="mx-auto mt-20 pt-16 lg:px-16 px-9">
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-16">
-        <div class="flex flex-col justify-center lg:items-start items-center">
+        <div class="flex flex-col justify-center lg:items-start items-center"data-aos="fade-right" data-aos-duration="1400">
           <h1 class="text-3xl lg:text-5xl text-teal-100 font-bold ">Administramos Sonhos</h1>
           <p class="mt-4 text-gray-500  text-base">
             Foque no que realmente importa
@@ -13,7 +13,7 @@
         </div>
 
         <div>
-          <img class="w-auto h-[32rem] md:h-auto mx-auto hidden md:block" src="@/assets/images/homen3.png" alt="">
+          <img class="w-auto h-[32rem] md:h-auto mx-auto hidden md:block" src="@/assets/images/homen3.png" alt=""data-aos="fade-left" data-aos-duration="1400">
         </div>
       </div>
     </div>

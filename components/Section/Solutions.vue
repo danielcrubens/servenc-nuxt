@@ -1,15 +1,15 @@
 <template>
-  <section class="after:content-['']  relative bg-[url('@/assets/images/line1.png')] bg-auto bg-no-repeat  bg-[right_-3rem_top_15rem]">
+  <section id="solutions" class="md:py-8 after:content-['']  relative bg-[url('@/assets/images/line1.png')] bg-auto bg-no-repeat  bg-[right_-3rem_top_15rem]">
     <div class="mx-auto py-6 px-5 lg:py-16 lg:px-14">
-      <h2 class="text-2xl lg:text-4xl font-bold text-teal-100 text-center">
+      <h2 class="text-2xl lg:text-4xl font-bold text-teal-100 text-center"data-aos-delay="300" data-aos-offset="350" data-aos="fade-up" data-aos-duration="1400">
         Nossas Soluções
       </h2>
-      <h3 class="text-xl lg:text-3xl font-semibold text-teal-100 text-center">
+      <h3 class="text-xl lg:text-3xl font-semibold text-teal-100 text-center"data-aos-delay="350" data-aos-offset="350" data-aos="fade-up" data-aos-duration="1400">
         Tudo que você precisa em uma administradora
       </h3>
       <section>
-        <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-            <div class="grid grid-cols-2 gap-x-6 sm:grid-cols-4">
+        <div class="max-w-screen-xl  mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+            <div class="grid grid-cols-2 gap-x-6 sm:grid-cols-4"data-aos-delay="360" data-aos-offset="350" data-aos="zoom-in" data-aos-duration="1400">
               <div class="card">
                 <Building :size="30" color="#e30061" class=" mx-auto"/>
                 <h4>Assessoria Especializada</h4>
@@ -30,10 +30,10 @@
                 <UserCog :size="30" color="#e30061" class=" mx-auto"/>
                 <h4>Central de Apoio Técnico</h4>
               </div>
-              <div class="mt-5 animate-pulse transition delay-700 duration-700 ease-in-out rounded mx-auto flex flex-col items-stretch justify-center text-center w-full h-40 bg-pink  shadow-lg focus:outline-none focus:ring">
+              <a href="https://servenc.hlp.polgo.online/" target="_blank" class="mt-5 animate-pulse transition delay-700 duration-700 ease-in-out rounded mx-auto flex flex-col items-stretch justify-center text-center w-full h-40 bg-pink  shadow-lg focus:outline-none ">
                 <DollarSign :size="30" color="#ffff" class=" mx-auto"/>
                 <h4 class="text-white font-bold">Cashback</h4>
-              </div>
+              </a>
               <div class="card">
                 <Handshake :size="30" color="#e30061" class=" mx-auto"/>
                 <h4>Canal do Sindico</h4>
